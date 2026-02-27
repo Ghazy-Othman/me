@@ -1,0 +1,336 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ghazy Othman</title>
+    <link id="favicon" rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="bgCanvas"></canvas>
+    <main class="layout">
+        <aside class="sidebar" aria-label="profile summary">
+            <div class="avatar-wrap" aria-hidden="true">
+                <canvas id="earthCanvas"></canvas>
+            </div>
+            <div class="name">Ghazy Othman</div>
+            <div class="title">
+                <span class="typewriter" id="typewriter" aria-live="polite">Software Engineer</span>
+            </div>
+            <p class="summary">
+                <span class="summary-typewriter" id="summaryTypewriter"
+                    data-text="Hi - I'm a backend-focused developer specializing in Laravel and building reliable, testable APIs. I enjoy solving complex problems, building secure APIs, and optimizing caching, and database queries for production performance. Currently open for Backend / Laravel roles and Software Engineer internships."></span>
+            </p>
+            <div class="contact-icons" aria-label="contact links">
+                <a class="icon-link" href="mailto:ghazy.h.othman@gmail.com" aria-label="Gmail">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm-1.2 2L12 10.8 5.2 6h13.6ZM4 18V7.3l8 5.3 8-5.3V18H4Z" />
+                    </svg>
+                </a>
+                <!-- TODO -->
+                <a class="icon-link" href="" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20.4 3H3.6A.6.6 0 0 0 3 3.6v16.8c0 .3.3.6.6.6h16.8c.3 0 .6-.3.6-.6V3.6a.6.6 0 0 0-.6-.6ZM8.4 18.6H6V9.3h2.4v9.3ZM7.2 8.3a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8Zm11.4 10.3h-2.4v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5v4.8H10.4V9.3h2.3v1.3h.1c.3-.6 1.2-1.3 2.5-1.3 2.7 0 3.2 1.8 3.2 4.1v5.2Z" />
+                    </svg>
+                </a>
+                <!-- TODO -->
+                <a class="icon-link" href="" aria-label="Codeforces" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 17h3V7H4v10Zm6 0h3V4h-3v13Zm6 0h3V10h-3v7Z" />
+                    </svg>
+                </a>
+                <!-- TODO -->
+                <a class="icon-link" href="" aria-label="LeetCode" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M15.6 3.3a1 1 0 0 1 0 1.4L8.7 11.6a2.5 2.5 0 0 0 0 3.5l2.2 2.2a2.5 2.5 0 0 0 3.5 0l1.7-1.7a1 1 0 1 1 1.4 1.4l-1.7 1.7a4.5 4.5 0 0 1-6.4 0l-2.2-2.2a4.5 4.5 0 0 1 0-6.4l6.9-6.9a1 1 0 0 1 1.5.1Z" />
+                        <path d="M20.5 12a1 1 0 0 1-1 1H12a1 1 0 1 1 0-2h7.5a1 1 0 0 1 1 1Z" />
+                    </svg>
+                </a>
+                <a class="icon-link" href="" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2.2c-5.5 0-10 4.4-10 9.9 0 4.4 2.9 8.1 7 9.4.5.1.7-.2.7-.5v-1.9c-2.9.6-3.5-1.2-3.5-1.2-.5-1.2-1.2-1.5-1.2-1.5-1-.6.1-.6.1-.6 1.1.1 1.7 1.1 1.7 1.1 1 .1.9-1.6 2.9-1.6.1-.9.4-1.4.7-1.7-2.3-.3-4.8-1.1-4.8-5 0-1.1.4-2 1.1-2.8-.1-.3-.5-1.4.1-2.8 0 0 .9-.3 2.9 1.1.8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.5.1 2.8.7.8 1.1 1.7 1.1 2.8 0 3.9-2.5 4.7-4.8 5 .4.3.8 1 .8 2.1v3.1c0 .3.2.6.7.5 4.1-1.3 7-5 7-9.4 0-5.5-4.5-9.9-10-9.9Z" />
+                    </svg>
+                </a>
+            </div>
+            <button class="resume-btn">Download Resume</button>
+            <div class="made-by">made with ❤️ by Ghazy</div>
+        </aside>
+
+        <section class="content" aria-label="portfolio details">
+            <article id="experience" class="card">
+                <h2>Experience</h2>
+                <p class="projects-intro">
+                    I have worked on many projects with unique ideas, but instead of scattering my efforts, I decided to
+                    build a complete system with a high level of professionalism. Here, I share how I built that system,
+                    the challenges I faced, and how I solved them. You can see brief snapshots of my projects below, and
+                    for the full code, you can visit my GitHub. If you prefer a quicker overview, you can read the
+                    skills section to understand exactly what I can do.
+                    <br>
+                    So, let's start 👽
+                </p>
+                <h3 class="sub-title">Ksa-Store</h3>
+                <p class="projects-intro">
+                    The project is a fully integrated e-commerce store tailored for the Saudi market. When I say
+                    “integrated,” I mean a production-ready MVP prepared for deployment. I built the project in
+                    stages
+                    using Laravel, and at each stage I delivered a store with new features and tested them manually.
+                    <br><br>
+
+                    <span class="sub-title">Web & API</span><br>
+                    I built the web pages using Livewire, and I also developed the API to support a potential mobile
+                    application. However, I noticed that a significant amount of code was being duplicated between the
+                    API controllers and the Livewire components. To solve this, I restructured the project and adopted
+                    the Service Pattern to separate shared business logic from logic specific to controllers or
+                    components. I chose this approach because it made the project cleaner, more maintainable, and more
+                    scalable.
+                    <br><br>
+
+                    <span class="sub-title">Authentication & Authorization</span><br>
+                    For authentication on the web side, I relied on Laravel's default session-based system. For the API,
+                    I used Sanctum (token-based authentication). In addition, I implemented social login using Laravel
+                    Socialite to allow users to sign in via Google, Facebook, X, and other providers.
+
+                    But what if a user wants to complete a purchase without creating an account? That is where Guest
+                    Mode comes in. Through Guest Mode, users can complete the entire purchase and payment process while
+                    providing the required shipping information during checkout.
+
+                    However, if there is a shipping process, how can a guest track the order status? I addressed this by
+                    building a dedicated order-tracking page where any user (guest or registered) can enter the order ID
+                    and check the current status.
+                    <br><br>
+
+                    <span class="sub-title">Admin</span>
+                    <br>
+                    To build the admin dashboard, I used Filament (and honestly, it's excellent). From the control
+                    panel, the admin can view products, categories, orders, and users, with full create and delete
+                    capabilities. The admin also has access to a dedicated analytics page that provides system and order
+                    insights. The entire dashboard is real-time and event-driven.
+                    <br><br>
+
+                    <span class="sub-title">E-Payment & Webhooks</span>
+                    <br>
+                    The payment gateway used is Moyasar, which supports cards, MasterCard, Mada, and Apple Pay.
+
+                    I encountered an important challenge: how can the order status be updated if the user closes the
+                    browser before the callback executes, or if the connection drops for any external reason? The answer
+                    is webhooks. I implemented webhook handling to ensure the order status is updated regardless of the
+                    user's actions or network conditions.
+                    <br><br>
+
+                    Do you think I was done?😁
+                    <br>
+                    Let's start optimization..💪
+                    <br><br>
+
+                    <span class="sub-title">Caching</span>
+                    <br>
+                    This is where performance optimization becomes interesting. To improve system performance and user
+                    experience, caching was the first strategy I implemented. I cached data that was frequently
+                    requested but rarely changed. The real challenge, however, was determining when to invalidate the
+                    cache and I handled that carefully.
+
+                    For example, I cached active categories displayed on the store page. To invalidate this cache
+                    correctly, I created an observer on the Category model that clears the cache whenever a category is
+                    added or removed.
+
+                    Another example is caching product details based on the product slug (I avoid exposing numeric IDs
+                    and instead use slugs or UUIDs). In this case, it would not be efficient to clear the cache whenever
+                    a new product is added or removed. Instead, I invalidate the cache only when the specific product is
+                    updated.
+
+                    You might ask: why cache individual products at all, especially if there are around one million
+                    products? The answer is that a product is cached only after a user visits its page. This means that
+                    only the most frequently visited products are cached â€” potentially less than 10% of the total
+                    inventory.
+                    <br><br>
+
+                    <span class="sub-title">Advanced Cart Logic</span>
+                    <br>
+                    Using simple sessions for the cart was not sufficient, as sessions eventually expire. Instead, I
+                    implemented a hybrid system: a database-driven cart linked to a long-lived cookie (or a header ID
+                    for the mobile API). This ensures the cart persists even if a guest returns days later.
+
+                    Additionally, if a guest decides to log in, I implemented logic to automatically merge their guest
+                    cart items into their main account cart.
+                    I also separated quantity logic to prevent subtle bugs:
+                    <i>Adding</i> an item increments the quantity (+=).
+                    <i>Updating</i> an item from the cart page sets the exact value (=).
+                    Small implementation details like these help prevent major logic issues.
+                    <br><br>
+
+                    <span class="sub-title">Localization & Security</span>
+                    <br>
+                    To provide a tailored experience, I built a custom middleware engine to handle localization
+                    (Arabic/English) intelligently. The system checks the API header first (for mobile apps), then the
+                    user's database preference, followed by cookies, and finally the system configuration.
+
+                    From a security perspective, I avoided shortcuts. I implemented rate limiting on the checkout and
+                    login endpoints to prevent brute-force and card-testing attacks. I also protected the API against
+                    IDOR vulnerabilities by ensuring that users (and guests) can modify only the cart items they
+                    actually own, enforced through strict service-level checks.
+                    <br><br>
+
+                    <span class="sub-title">Real-Time & Architecture</span>
+                    <br>
+                    To ensure a responsive user interface, I used the Event-Listener pattern combined with queues. Heavy
+                    operations such as sending OTP codes, welcome emails, or order status notifications are never
+                    processed synchronously; instead, they are dispatched to background workers.
+
+                    To make the dashboard and user profile feel dynamic, I utilized Laravel Reverb for real-time
+                    broadcasting. When an order status changes, an event is triggered and the frontend updates instantly
+                    without requiring a page refresh.
+                    <br><br>
+
+                    <span class="sub-title">Testing</span>
+                    <br>
+                    One of the hardest lessons I learned in my career is that the time and effort required to write
+                    tests during development are far less than the effort needed to fix defects later. The project
+                    became significantly more complex because features were initially shipped without proper testing.
+
+                    I admit that I neglected testing at the beginning, especially unit testing. When I eventually
+                    started writing tests, I was surprised by the number of bugs that surfaced. Those issues could have
+                    significantly reduced system reliability if the application had been in production.
+
+                    Since then, I have adopted a more disciplined approach. I write both unit and feature tests to
+                    validate the system before introducing new functionality, using PHPUnit. Now, whenever I add a new
+                    feature, I do not feel comfortable until I run the full test suite successfully.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>Skills</h2>
+                <div class="panel">
+                    <div class="skills-groups" aria-label="skills list">
+                        <div class="skills-group">
+                            <span class="chip">PHP 8+</span>
+                            <span class="chip">Java</span>
+                            <span class="chip">Python</span>
+                            <span class="chip">C++</span>
+                            <span class="chip">Basic Frontend Knowledge (HTML, CSS, Tailwindm JavaScript)</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">SQL</span>
+                            <span class="chip">MySQL</span>
+                            <span class="chip">PostgreSQL</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Laravel Development</span>
+                            <span class="chip">Eloquent ORM</span>
+                            <span class="chip">RESTful API Design & Implementation</span>
+                            <span class="chip">Service Pattern Architecture</span>
+                            <span class="chip">Event-Listener Pattern</span>
+                            <span class="chip">Model Observers</span>
+                            <span class="chip">Middleware</span>
+                            <span class="chip">Session-Based Authentication</span>
+                            <span class="chip">Laravel Sanctum (Token Authentication)</span>
+                            <span class="chip">JWT Authentication</span>
+                            <span class="chip">OAuth Integration</span>
+                            <span class="chip">IDOR Protection, Rate Limiting</span>
+                            <span class="chip">Validation</span>
+                            <span class="chip">Soft Delete</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Queues & Jobs</span>
+                            <span class="chip">Event-Driven Jobs</span>
+                            <span class="chip">Emails & Notifications</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Caching</span>
+                            <span class="chip">Redis</span>
+                            <span class="chip">Query Optimization</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Webhook Integration</span>
+                            <span class="chip">Payment Gateway Integration (Moyasar)</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Search & Filtering API Design</span>
+                            <span class="chip">Localization & Internationalization (i18n, RTL Support)</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Unit & Feature Testing with PHPUnit</span>
+                            <span class="chip">Test-Driven Development (TDD)</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Docker</span>
+                            <span class="chip">Git</span>
+                            <span class="chip">GitHub</span>
+                            <span class="chip">GitLab</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">AI Integrations</span>
+                            <span class="chip">Similarity Services</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Big-O Complexity Analysis</span>
+                            <span class="chip">Time & Space Complexity Optimization</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Arrays</span>
+                            <span class="chip">Strings</span>
+                            <span class="chip">Two Pointers Technique</span>
+                            <span class="chip">Sliding Window Technique</span>
+                            <span class="chip">Prefix Sum</span>
+                            <span class="chip">Binary Search</span>
+                            <span class="chip">Bit Manipulation</span>
+                            <span class="chip">Recursion</span>
+                            <span class="chip">Backtracking</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Linked Lists (Singly, Doubly)</span>
+                            <span class="chip">Stacks</span>
+                            <span class="chip">Queues</span>
+                            <span class="chip">Deque</span>
+                            <span class="chip">Hash Tables / Hash Maps</span>
+                            <span class="chip">Heaps / Priority Queues</span>
+                            <span class="chip">Sets</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Trees</span>
+                            <span class="chip">Binary Trees</span>
+                            <span class="chip">Binary Search Trees</span>
+                            <span class="chip">Tree Traversals (DFS, BFS)</span>
+                            <span class="chip">Preorder / Inorder / Postorder Traversal</span>
+                            <span class="chip">Level Order Traversal</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Graphs</span>
+                            <span class="chip">Graph Traversal (DFS, BFS)</span>
+                            <span class="chip">Shortest Path Algorithms (Dijkstra, Bellman-Ford)</span>
+                            <span class="chip">Minimum Spanning Tree (Kruskal, Prim)</span>
+                            <span class="chip">Union-Find / Disjoint Set</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Greedy Algorithms</span>
+                            <span class="chip">Dynamic Programming</span>
+                            <span class="chip">Divide and Conquer</span>
+                            <span class="chip">Memoization</span>
+                        </div>
+                        <div class="skills-group">
+                            <span class="chip">Trie</span>
+                            <span class="chip">Segment Tree</span>
+                            <span class="chip">Fenwick Tree (Binary Indexed Tree)</span>
+                            <span class="chip">KMP String Matching</span>
+                            <span class="chip">Rabin-Karp Algorithm</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="index.js" defer></script>
+</body>
+
+</html>
